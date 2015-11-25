@@ -13,6 +13,9 @@
 		8E39D2A41C06706400CEFEED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E39D2A31C06706400CEFEED /* Images.xcassets */; };
 		8E39D2A71C06706400CEFEED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E39D2A51C06706400CEFEED /* LaunchScreen.xib */; };
 		8E39D2B31C06706500CEFEED /* CropRoundedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39D2B21C06706500CEFEED /* CropRoundedImageViewTests.swift */; };
+		8E39D2BE1C0670CE00CEFEED /* CropRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39D2BD1C0670CE00CEFEED /* CropRoundedImageView.swift */; };
+		8E39D2C11C06718200CEFEED /* tim-cook-profile.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8E39D2BF1C06718200CEFEED /* tim-cook-profile.jpeg */; };
+		8E39D2C21C06718200CEFEED /* steve-jobs-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E39D2C01C06718200CEFEED /* steve-jobs-profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		8E39D2AC1C06706500CEFEED /* CropRoundedImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropRoundedImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E39D2B11C06706500CEFEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E39D2B21C06706500CEFEED /* CropRoundedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropRoundedImageViewTests.swift; sourceTree = "<group>"; };
+		8E39D2BD1C0670CE00CEFEED /* CropRoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropRoundedImageView.swift; sourceTree = "<group>"; };
+		8E39D2BF1C06718200CEFEED /* tim-cook-profile.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tim-cook-profile.jpeg"; sourceTree = "<group>"; };
+		8E39D2C01C06718200CEFEED /* steve-jobs-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steve-jobs-profile.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		8E39D2991C06706400CEFEED /* CropRoundedImageView */ = {
 			isa = PBXGroup;
 			children = (
+				8E39D2BC1C0670AF00CEFEED /* CropRounded */,
 				8E39D29C1C06706400CEFEED /* AppDelegate.swift */,
 				8E39D29E1C06706400CEFEED /* ViewController.swift */,
 				8E39D2A01C06706400CEFEED /* Main.storyboard */,
@@ -110,6 +117,16 @@
 				8E39D2B11C06706500CEFEED /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E39D2BC1C0670AF00CEFEED /* CropRounded */ = {
+			isa = PBXGroup;
+			children = (
+				8E39D2BD1C0670CE00CEFEED /* CropRoundedImageView.swift */,
+				8E39D2BF1C06718200CEFEED /* tim-cook-profile.jpeg */,
+				8E39D2C01C06718200CEFEED /* steve-jobs-profile.png */,
+			);
+			name = CropRounded;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +209,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E39D2C21C06718200CEFEED /* steve-jobs-profile.png in Resources */,
 				8E39D2A21C06706400CEFEED /* Main.storyboard in Resources */,
 				8E39D2A71C06706400CEFEED /* LaunchScreen.xib in Resources */,
+				8E39D2C11C06718200CEFEED /* tim-cook-profile.jpeg in Resources */,
 				8E39D2A41C06706400CEFEED /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E39D29F1C06706400CEFEED /* ViewController.swift in Sources */,
+				8E39D2BE1C0670CE00CEFEED /* CropRoundedImageView.swift in Sources */,
 				8E39D29D1C06706400CEFEED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

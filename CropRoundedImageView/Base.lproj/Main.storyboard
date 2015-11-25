@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CropRoundedImageView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,110 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve-jobs-profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="uge-Lo-dcU" customClass="CropRoundImageView" customModule="CropRoundedImageView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Vot-CT-qFH"/>
+                                    <constraint firstAttribute="width" constant="100" id="cTH-SF-dTN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="crop" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve-jobs-profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="7lz-kf-LE7" customClass="CropRoundImageView" customModule="CropRoundedImageView" customModuleProvider="target">
+                                <rect key="frame" x="17" y="147" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5VO-AC-afH"/>
+                                    <constraint firstAttribute="width" constant="100" id="nRt-Zv-GbE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="crop" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tim-cook-profile.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Jti-mV-hH7" customClass="CropRoundImageView" customModule="CropRoundedImageView" customModuleProvider="target">
+                                <rect key="frame" x="152" y="20" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5Vb-ku-oOZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="hA6-Vn-0W3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="crop" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tim-cook-profile.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EsI-lW-LhL" customClass="CropRoundImageView" customModule="CropRoundedImageView" customModuleProvider="target">
+                                <rect key="frame" x="153" y="147" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JEX-tC-w4W"/>
+                                    <constraint firstAttribute="width" constant="100" id="j3L-he-fh2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve-jobs-profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="yjg-u8-4wM" customClass="CropRoundImageView" customModule="CropRoundedImageView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="279" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IDw-dK-Gnf"/>
+                                    <constraint firstAttribute="height" constant="100" id="SEA-2Y-4h2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="crop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tim-cook-profile.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-sf-BeA" customClass="CropRoundImageView" customModule="CropRoundedImageView" customModuleProvider="target">
+                                <rect key="frame" x="152" y="279" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CDf-Yk-see"/>
+                                    <constraint firstAttribute="height" constant="100" id="is6-ad-Bye"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="crop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7lz-kf-LE7" firstAttribute="top" secondItem="uge-Lo-dcU" secondAttribute="bottom" constant="27" id="4gf-cY-3E6"/>
+                            <constraint firstItem="EsI-lW-LhL" firstAttribute="leading" secondItem="7lz-kf-LE7" secondAttribute="trailing" constant="36" id="GcT-LN-w6e"/>
+                            <constraint firstItem="yjg-u8-4wM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MRm-fP-kJj"/>
+                            <constraint firstItem="uge-Lo-dcU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="MSQ-qD-PeB"/>
+                            <constraint firstItem="yjg-u8-4wM" firstAttribute="top" secondItem="aVb-sf-BeA" secondAttribute="top" id="Sl6-nC-6ei"/>
+                            <constraint firstItem="7lz-kf-LE7" firstAttribute="top" secondItem="EsI-lW-LhL" secondAttribute="top" id="VCy-Gb-FgG"/>
+                            <constraint firstItem="Jti-mV-hH7" firstAttribute="leading" secondItem="uge-Lo-dcU" secondAttribute="trailing" constant="36" id="Zpp-fN-Qo1"/>
+                            <constraint firstItem="7lz-kf-LE7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="1" id="b4P-dW-o38"/>
+                            <constraint firstItem="aVb-sf-BeA" firstAttribute="leading" secondItem="Jti-mV-hH7" secondAttribute="leading" id="gU8-gO-mgG"/>
+                            <constraint firstItem="yjg-u8-4wM" firstAttribute="leading" secondItem="uge-Lo-dcU" secondAttribute="leading" id="kXR-LB-5cf"/>
+                            <constraint firstItem="yjg-u8-4wM" firstAttribute="top" secondItem="7lz-kf-LE7" secondAttribute="bottom" constant="32" id="mJI-PK-Xoe"/>
+                            <constraint firstItem="Jti-mV-hH7" firstAttribute="top" secondItem="uge-Lo-dcU" secondAttribute="top" id="ofF-d3-umu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="steve-jobs-profile.png" width="300" height="387"/>
+        <image name="tim-cook-profile.jpeg" width="194" height="260"/>
+    </resources>
 </document>
