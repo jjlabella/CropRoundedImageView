@@ -3,5 +3,4 @@ Swift (iOS) - Sometimes you need to crop to center or make a round UIImageView. 
 
 ##Preview
 
-![Final result]({{site.baseurl}}//Screen%20Shot%202015-11-25%20at%2023.54.10.png)
-
+![]({{site.baseurl}}/https://github.com/jjlabella/CropRoundedImageView/blob/master/CropRoundedImageView/PreviewFinal.png)
