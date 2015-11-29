@@ -16,6 +16,9 @@
 		8E39D2BE1C0670CE00CEFEED /* CropRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39D2BD1C0670CE00CEFEED /* CropRoundedImageView.swift */; };
 		8E39D2C11C06718200CEFEED /* tim-cook-profile.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8E39D2BF1C06718200CEFEED /* tim-cook-profile.jpeg */; };
 		8E39D2C21C06718200CEFEED /* steve-jobs-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E39D2C01C06718200CEFEED /* steve-jobs-profile.png */; };
+		8E6D4D791C0BB813004C3073 /* CustomClass.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6D4D761C0BB813004C3073 /* CustomClass.png */; };
+		8E6D4D7A1C0BB813004C3073 /* Options.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6D4D771C0BB813004C3073 /* Options.png */; };
+		8E6D4D7B1C0BB813004C3073 /* PreviewFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6D4D781C0BB813004C3073 /* PreviewFinal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		8E39D2BD1C0670CE00CEFEED /* CropRoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropRoundedImageView.swift; sourceTree = "<group>"; };
 		8E39D2BF1C06718200CEFEED /* tim-cook-profile.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tim-cook-profile.jpeg"; sourceTree = "<group>"; };
 		8E39D2C01C06718200CEFEED /* steve-jobs-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steve-jobs-profile.png"; sourceTree = "<group>"; };
+		8E6D4D761C0BB813004C3073 /* CustomClass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CustomClass.png; sourceTree = "<group>"; };
+		8E6D4D771C0BB813004C3073 /* Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Options.png; sourceTree = "<group>"; };
+		8E6D4D781C0BB813004C3073 /* PreviewFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviewFinal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		8E39D29A1C06706400CEFEED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E6D4D761C0BB813004C3073 /* CustomClass.png */,
+				8E6D4D771C0BB813004C3073 /* Options.png */,
+				8E6D4D781C0BB813004C3073 /* PreviewFinal.png */,
 				8E39D29B1C06706400CEFEED /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +221,11 @@
 				8E39D2C21C06718200CEFEED /* steve-jobs-profile.png in Resources */,
 				8E39D2A21C06706400CEFEED /* Main.storyboard in Resources */,
 				8E39D2A71C06706400CEFEED /* LaunchScreen.xib in Resources */,
+				8E6D4D791C0BB813004C3073 /* CustomClass.png in Resources */,
 				8E39D2C11C06718200CEFEED /* tim-cook-profile.jpeg in Resources */,
 				8E39D2A41C06706400CEFEED /* Images.xcassets in Resources */,
+				8E6D4D7A1C0BB813004C3073 /* Options.png in Resources */,
+				8E6D4D7B1C0BB813004C3073 /* PreviewFinal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +441,7 @@
 				8E39D2B81C06706500CEFEED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E39D2B91C06706500CEFEED /* Build configuration list for PBXNativeTarget "CropRoundedImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +450,7 @@
 				8E39D2BB1C06706500CEFEED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
